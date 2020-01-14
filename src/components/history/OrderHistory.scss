@@ -1,0 +1,27 @@
+.orderHistory {
+    width: 100%;
+    background: #fff;
+    box-shadow: 3px 3px 10px -9px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    &-top,
+    &-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    &-price {
+        min-width: 10ch;
+        text-align: right;
+    }
+
+    &-top {
+        padding-bottom: 0;
+    }
+}

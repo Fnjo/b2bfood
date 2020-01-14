@@ -1,0 +1,29 @@
+.detailtable {
+    .MuiTable-root {
+        border-collapse: separate;
+        border-spacing: 0 8px;
+
+        & .MuiTableRow-root {
+            border-radius: 5px;
+
+            & .MuiTableCell-root:nth-child(1) {
+                background-color: #e5f1ff;
+                padding-left: 0;
+                width: 30%;
+            }
+
+            & .MuiTableCell-root {
+                padding: 9px 12px;
+                border-bottom: none;
+            }
+
+            & .MuiTableCell-root {
+                border-radius: 5px;
+            }
+        }
+
+        & .MuiTableRow-root {
+            background-color: #fff;
+        }
+    }
+}

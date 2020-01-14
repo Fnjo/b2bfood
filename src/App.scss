@@ -1,0 +1,35 @@
+.app {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    @media screen and (min-width: 600px) {
+        background-color: #cceaff;
+    }
+}
+
+.mainContent {
+    display: flex;
+    background-color: #cceaff;
+    border-radius: 30px 0 0 30px;
+    flex: 1;
+    height: 100vh;
+    max-height: 100vh;
+
+    .home,
+    .clients,
+    .menu {
+        order: 2;
+    }
+
+    .nav {
+        order: 1;
+        z-index: 99;
+    }
+
+    @media screen and (min-width: 600px) {
+        margin-top: 0;
+        max-height: 100vh;
+    }
+}

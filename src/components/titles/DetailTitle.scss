@@ -1,0 +1,19 @@
+.detailTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    h2 {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .exit {
+        display: block;
+
+        @media screen and (min-width: 600px) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.orderRow {
+    width: 100%;
+    background: #ffd99d;
+    border-radius: 5px;
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 8px;
+
+    &-number {
+        width: 47px;
+        height: 47px;
+        background: #ffc893;
+        border-radius: 5px;
+        margin: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    &-details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 10px;
+    }
+
+    &-dishAndPrice {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 14px;
+    }
+
+    &-counter {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0 13px 0 20px;
+        font-size: 13px;
+        font-weight: 500;
+
+        @media screen and (max-width: 600px) {
+            margin-left: 5px;
+        }
+
+        .amount {
+            height: 31px;
+            width: 31px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+    }
+}

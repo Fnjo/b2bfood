@@ -1,0 +1,147 @@
+.home {
+    background: white;
+    flex: 1;
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    max-height: 100%;
+    height: 100%;
+
+    @media screen and (min-width: 600px) {
+        border-radius: 30px 0 0 30px;
+        max-height: 100vh;
+        height: 100vh;
+    }
+
+    &-left {
+        width: 100%;
+        padding: 30px 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 80px;
+
+        & .table-top {
+            margin-bottom: 10px;
+            & h3 {
+                margin: 0;
+            }
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .pageTitle {
+            display: none;
+        }
+
+        @media screen and (min-width: 600px) {
+            width: 65%;
+            padding: 30px 40px 0 40px;
+
+            .pageTitle {
+                display: block;
+            }
+        }
+    }
+
+    &-right {
+        // padding: 30px 40px 0 40px;
+        padding: 30px 25px 0 25px;
+        flex: 1;
+        background-color: #e6f2ff;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        width: calc(100% - 70px);
+        height: calc(100% - 100px);
+        left: 10px;
+        border-radius: 5px;
+        z-index: 10;
+        overflow: scroll;
+
+        & .detailtable {
+            padding-bottom: 30px;
+            border-bottom: 1px solid #fff;
+        }
+
+        & .order-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 30px;
+
+            & .MuiButtonBase-root {
+                text-transform: unset !important;
+                font-size: 12px !important;
+                padding: 0;
+                height: 30px;
+                background-color: #5db3ff;
+                color: #000;
+                box-shadow: none;
+            }
+        }
+
+        & .ordertable {
+            overflow-y: unset;
+            overflow-x: unset;
+        }
+
+        &-showOnMobile {
+            display: flex;
+        }
+
+        @media screen and (min-width: 600px) {
+            padding: 30px 40px 0 40px;
+            display: flex;
+            position: unset;
+            top: unset;
+            width: unset;
+            height: unset;
+            left: unset;
+            border-radius: 0;
+        }
+    }
+
+    .blackLayerInvoice {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 100;
+    }
+
+    .invoiceimg {
+        position: absolute;
+        z-index: 200;
+        width: 630px;
+        left: calc(50% - 315px);
+        margin-top: 40px;
+    }
+
+    .button-downloadbtn {
+        position: absolute;
+        z-index: 200;
+        right: calc(50% - 480px);
+        margin-top: 40px;
+        font-size: 14px;
+        padding: 10px 17px;
+
+        img {
+            margin-right: 15px;
+        }
+    }
+
+    .button-exitbtn {
+        background-color: #fff;
+        position: absolute;
+        z-index: 200;
+        right: 50px;
+        margin-top: 40px;
+        font-size: 14px;
+        padding: 6px 14px;
+    }
+}

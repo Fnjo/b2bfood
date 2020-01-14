@@ -1,0 +1,33 @@
+.mobileNav {
+    position: fixed;
+    display: flex;
+    left: 0;
+    width: calc(100% - 60px);
+    padding: 15px 20px;
+    margin: 10px;
+    background: #e6f2ff;
+    border-radius: 5px;
+    justify-content: space-between;
+
+    .blackLayer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 103%;
+        height: 103%;
+        background: rgba(0, 0, 0, 0.5);
+
+        @media screen and (min-width: 600px) {
+            display: none;
+        }
+    }
+
+    .button {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    @media screen and (min-width: 600px) {
+        display: none;
+    }
+}

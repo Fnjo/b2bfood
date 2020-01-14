@@ -1,0 +1,133 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 30px;
+
+    button {
+        margin-top: 30px;
+        justify-content: center;
+        align-self: flex-end;
+        border: none;
+
+        background-color: #5db3ff;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        cursor: pointer;
+        border-radius: 5px;
+        height: 30px;
+        padding: 0 18px;
+        transition: 0.3s all;
+    }
+
+    label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        margin-bottom: 7px;
+
+        input[type='text'] {
+            border: none;
+            border-radius: 5px;
+            padding: 9px 13px;
+            width: 55%;
+        }
+
+        &:nth-child(even) {
+            input {
+                background-color: #d0e7ff;
+            }
+        }
+
+        &:nth-child(odd) {
+            input {
+                background-color: #e6f2ff;
+            }
+        }
+    }
+
+    &-row {
+        display: flex;
+        border-radius: 5px;
+        margin-bottom: 7px;
+        align-items: center;
+
+        input {
+            border: none;
+            padding: 12px 13px;
+            background-color: inherit;
+            border-radius: 5px;
+            // &:nth-child(even) {
+            //     background-color: #d0e7ff;
+            // }
+
+            // &:nth-child(odd) {
+            //     background-color: #e6f2ff;
+            // }
+        }
+
+        input#dishNo {
+            padding: 12px 13px;
+            flex: unset;
+            width: 15px;
+        }
+
+        input#dishName {
+            flex: 3;
+        }
+
+        input#dishDesc {
+            flex: 5;
+        }
+
+        input#dishPrice {
+            flex: 2;
+        }
+
+        &:nth-child(even) {
+            background-color: #d0e7ff;
+        }
+
+        &:nth-child(odd) {
+            background-color: #e6f2ff;
+        }
+    }
+
+    & .celldivider {
+        float: right;
+        border-right: 1px solid #fff;
+        color: transparent;
+        font-size: 20px;
+
+        &-empty {
+            border: none;
+        }
+    }
+
+    .addclientselect {
+        width: 64%;
+        -webkit-appearance: none;
+        -moz-appearance: button;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -webkit-padding-end: 20px;
+        -moz-padding-end: 20px;
+        -webkit-padding-start: 2px;
+        -moz-padding-start: 2px;
+        background-color: #d0e7ff; /* Fallback color if gradients are not supported */
+        background-image: url(../../images/select-arrow.svg);
+        background-position: 94%;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 5px;
+        padding: 9px 13px;
+        color: #000;
+        font-size: inherit;
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

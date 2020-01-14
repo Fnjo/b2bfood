@@ -1,0 +1,20 @@
+.toggle {
+    background-color: #a1d3ff;
+    display: inline-flex;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    & span {
+        padding: 7px 12px;
+        color: rgba(0, 0, 0, 0.5);
+        transition: 0.3s all;
+
+        &.toggled {
+            background-color: #5db3ff;
+            border-radius: 4px;
+            color: rgba(0, 0, 0, 1);
+        }
+    }
+}

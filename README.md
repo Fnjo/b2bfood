@@ -7,6 +7,7 @@ $yarn
 $yarn start
 ```
 <br />
+
 B2B food is a web application which includes a dashboard and a orderering view. It is made in React 
 
 <br />
@@ -24,7 +25,7 @@ A check will be done on load at App.jsx to check if the localstorage contains th
 ### Dashboard and orderview
 - The dashboard is set on root. 
 - The orderview can be found on root/#/order/{companyName}
-  Id param is checked onmount to show the correct order page
+  - Id param is checked onmount to show the correct order page
 <br />
 
 ### Other details

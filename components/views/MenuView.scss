@@ -1,0 +1,133 @@
+.menu {
+    background: white;
+    flex: 1;
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    max-height: 100vh;
+    height: 100%;
+
+    @media screen and (min-width: 600px) {
+        border-radius: 30px 0 0 30px;
+        max-height: 100vh;
+        height: 100vh;
+    }
+
+    & .menu-left {
+        width: 100%;
+        padding: 30px 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 80px;
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+
+            .button {
+                display: none;
+            }
+        }
+
+        & .table-top {
+            margin-bottom: 10px;
+            & h3 {
+                margin: 0;
+            }
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .pageTitle {
+            display: none;
+        }
+
+        @media screen and (min-width: 600px) {
+            width: 45%;
+            padding: 30px 40px 0 40px;
+
+            &-header {
+                .button {
+                    display: flex;
+                }
+            }
+
+            .pageTitle {
+                display: block;
+            }
+        }
+    }
+
+    & .menu-right {
+        padding: 30px 25px 0 25px;
+        flex: 1;
+        background-color: #e6f2ff;
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        z-index: 10;
+        border-radius: 5px;
+
+        top: 40px;
+        width: calc(100% - 70px);
+        height: calc(100% - 100px);
+        left: 10px;
+        border-radius: 5px;
+
+        &-itemnumber {
+            width: 35px !important;
+        }
+
+        &-itemprice {
+            width: 60px !important;
+        }
+
+        & .detailtable {
+            padding-bottom: 30px;
+            border-bottom: 1px solid #fff;
+        }
+
+        & .order-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 30px;
+
+            & .MuiButtonBase-root {
+                text-transform: unset !important;
+                font-size: 12px !important;
+                padding: 0;
+                height: 30px;
+                background-color: #5db3ff;
+                color: #000;
+                box-shadow: none;
+            }
+        }
+
+        &-showOnMobile {
+            display: flex;
+        }
+
+        @media screen and (min-width: 600px) {
+            padding: 30px 40px 0 40px;
+            position: unset;
+            display: flex;
+
+            top: unset;
+            width: unset;
+            height: unset;
+            left: unset;
+            border-radius: 0;
+        }
+    }
+
+    .blackLayer {
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+}

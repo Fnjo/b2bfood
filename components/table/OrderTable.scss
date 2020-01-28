@@ -1,0 +1,65 @@
+.ordertable {
+    // flex: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    .MuiTable-root {
+        border-collapse: separate;
+        border-spacing: 0 8px;
+
+        & .MuiTableRow-head {
+            background-color: #e5f1ff !important;
+
+            & th {
+                position: sticky;
+                top: 0;
+                background-color: #e5f1ff;
+                border-radius: 0 !important;
+                padding: 5px !important;
+            }
+        }
+
+        & .MuiTableRow-root {
+            border-radius: 5px;
+
+            & .MuiTableCell-root:nth-child(1) {
+                width: 25%;
+            }
+
+            & .MuiTableCell-root {
+                padding: 12px;
+                border-bottom: none;
+
+                & .celldivider {
+                    float: right;
+                    border-right: 1px solid #e5f1ff;
+                    color: transparent;
+                }
+            }
+
+            & .MuiTableCell-root:nth-child(1) {
+                border-radius: 5px 0 0 5px;
+            }
+
+            & .MuiTableCell-root:last-child {
+                border-radius: 0 5px 5px 0;
+            }
+        }
+
+        & .MuiTableRow-root {
+            background-color: #fff;
+        }
+    }
+    .orderNoteText {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    .orderNote {
+        background: #fff;
+        font-size: 14px;
+        padding: 12px;
+        border-radius: 5px;
+        margin-bottom: 40px;
+    }
+}

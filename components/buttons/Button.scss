@@ -1,0 +1,102 @@
+.button {
+    background-color: #5db3ff;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 12px;
+    transition: 0.3s all;
+
+    &:hover {
+        background-color: #a1d3ff;
+    }
+
+    &-add {
+        background-color: #99f89a;
+        float: right;
+        height: 39px;
+
+        &:hover {
+            background-color: #5cdc5e;
+        }
+    }
+
+    &-remove {
+        background-color: #ffa7a7;
+        float: right;
+        height: 39px;
+
+        &:hover {
+            background-color: #ff7171;
+        }
+
+        img {
+            width: 18px;
+        }
+    }
+
+    &-plus,
+    &-minus {
+        width: 25px;
+        height: 25px;
+        border-radius: 5px;
+        background: #fff;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: #fff;
+        }
+    }
+
+    &-has-icon {
+        background-color: #a1d3ff;
+        justify-content: space-between;
+        padding: 13px 23px;
+        font-size: 14px;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: #5db3ff;
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            margin-right: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        &-has-icon {
+            font-size: 12px;
+            padding: 5px 15px;
+
+            img {
+                width: 18px;
+                height: 18px;
+                margin-right: 13px;
+            }
+        }
+    }
+}
+
+.tab-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+        background-color: red;
+    }
+
+    &:active {
+        outline: none;
+        background-color: red;
+    }
+}

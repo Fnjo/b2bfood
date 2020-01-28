@@ -1,0 +1,13 @@
+.pageTitle {
+    h1 {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0;
+        font-size: 26px;
+
+        @media screen and (min-width: 600px) {
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+    }
+}
